@@ -1,0 +1,84 @@
+.aboutHeader {
+  text-align: center;
+  padding: 5rem 0 3rem;
+}
+
+.aboutSubtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.storySection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.storyContent h2 {
+  font-size: 2.5rem;
+  color: var(--brand-gold);
+  margin-bottom: 1.5rem;
+}
+
+.storyContent p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+.storyContent strong {
+  color: var(--text-primary);
+}
+
+.storyImage {
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.valuesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.valueCard {
+  background-color: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.valueCard h3 {
+  color: var(--brand-gold);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.valueCard p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .storySection {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
